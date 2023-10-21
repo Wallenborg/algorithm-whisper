@@ -1,0 +1,186 @@
+/* css Resetting */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  margin: 0;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*global*/
+
+:root {
+  --color-accent-1: #0066ff;
+  --color-accent-2: whitesmoke;
+  --color-text: #ffffff;
+  --color-background: #333333;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: helvetica neue;
+}
+
+.wrapper {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  border-left: solid 1px var(--color-accent-1);
+  border-right: solid 1px var(--color-accent-1);
+  border-bottom: solid 1px var(--color-accent-1);
+}
+
+/*header*/
+
+.headline {
+  font-size: 2rem;
+  color: var(--color-accent-1);
+  text-align: center;
+}
+.subheadline {
+  font-size: 1.5rem;
+  color: var(--color-accent-1);
+  text-align: center;
+}
+
+/* main */
+
+.deck-pic {
+  top: 160px;
+  position: absolute;
+  max-width: 370px;
+  max-height: 370px;
+}
+
+.wrapper-circle {
+  width: 101px;
+  height: 101px;
+  border: solid 2px transparent;
+  border-radius: 51%;
+  position: relative;
+  top: 105px;
+  margin: 50px;
+  z-index: 500;
+  animation: spin 20s linear infinite;
+}
+
+.big-circle {
+  width: 301px;
+  height: 301px;
+  top: 105px;
+  border: solid 2px var(--color-accent-2);
+  border-radius: 51%;
+  position: absolute;
+  margin: 50px;
+}
+.circle {
+  display: block;
+  position: absolute;
+  top: 51%;
+  left: 51%;
+  width: 50px;
+  height: 50px;
+  margin: -25.5px;
+  background-color: var(--color-background);
+  border: solid 2px whitesmoke;
+  border-radius: 51%;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.deg-0 {
+  transform: translate(151px);
+}
+.deg-45 {
+  transform: rotate(46deg) translate(151px);
+}
+.deg-90 {
+  transform: rotate(91deg) translate(151px);
+}
+.deg-135 {
+  transform: rotate(136deg) translate(151px);
+}
+.deg-180 {
+  transform: rotate(181deg) translate(151px);
+}
+.deg-225 {
+  transform: rotate(226deg) translate(151px);
+}
+.deg-270 {
+  transform: rotate(271deg) translate(151px);
+}
+.deg-315 {
+  transform: rotate(316deg) translate(151px);
+}
+
+.text-box {
+  margin-top: 220px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border: solid 2px var(--color-accent-1);
+  border-radius: 10px;
+  width: 90%;
+  max-height: 300px;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+.text-box__text {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-indent: 2rem;
+  color: var(--color-text);
+}
+
+/*footer*/
+
+.footer-box {
+  margin-top: 30px;
+  width: 90%;
+  height: 100px;
+  background-color: var(--color-accent-1);
+  border-radius: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
