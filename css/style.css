@@ -166,22 +166,51 @@ body {
   border: solid 2px var(--color-accent-1);
   border-radius: 10px;
   width: 90%;
-  max-height: 300px;
+  max-height: 210px;
   overflow: hidden;
   overflow: scroll;
 }
 
-.text-box__shop {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 70%;
+.text-box-shop {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border: solid 2px var(--color-accent-1);
+  border-radius: 10px;
+  width: 90%;
+  max-height: 210px;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+.black-box {
+  background-color: black;
+  padding: 5px;
+  height: 190px;
+  margin-bottom: 5px;
+}
+
+.grey-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background);
+  border: solid 1px var(--color-accent-1);
+  border-radius: 10px;
+  padding: 20px 5px 5px 5px;
+  height: 180px;
+}
+
+.max-text-box {
+  max-width: 280px;
 }
 
 .text-box__text {
   text-align: center;
   margin-bottom: 10px;
   font-size: 1rem;
-  text-indent: 2rem;
+  /* text-indent: 2rem; */
   color: var(--color-text);
 }
 
