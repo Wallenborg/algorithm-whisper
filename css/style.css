@@ -88,6 +88,7 @@ body {
 }
 
 .deck-pic__shop {
+  transform: rotate(-20deg);
   max-width: 370px;
   max-height: 370px;
 }
