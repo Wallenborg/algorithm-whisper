@@ -99,7 +99,7 @@ body {
 }
 
 #myInput {
-  position: fixed;
+  /* position: fixed; */
   box-sizing: border-box;
   font-size: 16px;
   padding: 14px 20px 12px 14px;
