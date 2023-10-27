@@ -77,11 +77,21 @@ body {
   color: var(--color-accent-1);
   text-align: center;
 }
+.text {
+  text-align: center;
+  color: var(--color-text);
+  font-size: 0.7rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-top: solid 0.5px var(--color-accent-1);
+  border-bottom: solid 0.5px var(--color-accent-1);
+  margin: 20px;
+}
 
 /* main */
 
 .deck-pic {
-  top: 160px;
+  top: 215px;
   position: absolute;
   max-width: 370px;
   max-height: 370px;
@@ -108,7 +118,7 @@ body {
 .big-circle {
   width: 301px;
   height: 301px;
-  top: 105px;
+  top: 170px;
   border: solid 2px var(--color-accent-2);
   border-radius: 51%;
   position: absolute;
