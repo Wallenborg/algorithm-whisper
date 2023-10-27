@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <title>Document</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -18,11 +19,96 @@
         <h1 class="headline">The Algorithm Whisper</h1>
         <h2 class="subheadline">Tarot Deck</h2>
       </header>
+      <div class="text-align">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Card Finder</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input
+              type="text"
+              placeholder="Search.."
+              id="myInput"
+              onkeyup="filterFunction()"
+            />
+            <a href="#the-algorithm-architect" onclick="closeDropdown()"
+              >The Algorithm Architect</a
+            >
+            <a href="#the-avatar-shaman" onclick="closeDropdown()"
+              >The Avatar Shaman</a
+            >
+            <a href="#the-binary-abyss" onclick="closeDropdown()"
+              >The Binary Abyss</a
+            >
+            <a href="#the-binary-oracle" onclick="closeDropdown()"
+              >The Binary Oracle</a
+            >
+            <a href="#the-circuit-sage" onclick="closeDropdown()"
+              >The Circuit Sage</a
+            >
+            <a href="#the-codebreaker" onclick="closeDropdown()"
+              >The Codebreaker</a
+            >
+            <a href="#the-cyber-cultist" onclick="closeDropdown()"
+              >The Cyber Cultist</a
+            >
+            <a href="#the-dark-web-oracle" onclick="closeDropdown()"
+              >The Dark Web Oracle</a
+            >
+            <a href="#the-data-alchemist" onclick="closeDropdown()"
+              >The Data Alchemist</a
+            >
+            <a href="#the-data-anomaly" onclick="closeDropdown()"
+              >The Data Anomaly</a
+            >
+            <a href="#the-data-harvest" onclick="closeDropdown()"
+              >The Data Harvest</a
+            >
+            <a href="#the-data-puppeteer" onclick="closeDropdown()"
+              >The Data Puppeteer</a
+            >
+            <a href="#the-data-vampire" onclick="closeDropdown()"
+              >The Data Vampire</a
+            >
+            <a href="#the-deep-web" onclick="closeDropdown()">The Deep Web</a>
+            <a href="#the-digital-hivemind" onclick="closeDropdown()"
+              >The Digital Hivemind</a
+            >
+            <a href="#the-digital-labyrinth" onclick="closeDropdown()"
+              >The Digital Labyrinth</a
+            >
+            <a href="#the-digital-reaper" onclick="closeDropdown()"
+              >The Digital Reaper</a
+            >
+            <a href="#the-e-mail-emissary" onclick="closeDropdown()"
+              >The E-mail Emissary</a
+            >
+            <a href="#the-echo-chamber" onclick="closeDropdown()"
+              >The Echo Chamber</a
+            >
+            <a href="#the-firewall-guardian" onclick="closeDropdown()"
+              >The Firewall Guardian</a
+            >
+            <a href="#the-ghost-in-the-machine" onclick="closeDropdown()"
+              >The Ghost in the Machine</a
+            >
+            <a href="#the-holographic-oracle" onclick="closeDropdown()"
+              >The Holographic Oracle</a
+            >
+            <a href="#the-lost-algorithm" onclick="closeDropdown()"
+              >The Lost Algorithm</a
+            >
+            <a href="#the-malware-mage" onclick="closeDropdown()"
+              >The Malware Mage</a
+            >
+          </div>
+        </div>
+      </div>
 
       <ul class="continer-cards">
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Binary Oracle</h2>
+            <h2 class="card-box__name" id="the-binary-oracle">
+              The Binary Oracle
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -36,14 +122,15 @@
             <img
               src="img/the-binary-oracle.jpg"
               alt=""
-              id="The-Binary-Oracle"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Firewall Guardian</h2>
+            <h2 class="card-box__name" id="the-firewall-guardian">
+              The Firewall Guardian
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -56,14 +143,15 @@
             <img
               src="img/the-firewall-guardian.jpg"
               alt=""
-              id="The-Firewall-Guardian"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Pixel Portal</h2>
+            <h2 class="card-box__name" id="the-pixel-portal">
+              The Pixel Portal
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -77,14 +165,15 @@
             <img
               src="img/the-pixel-portal.jpg"
               alt=""
-              id="The-Pixel-Portal"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Data Alchemist</h2>
+            <h2 class="card-box__name" id="the-data-alchemist">
+              The Data Alchemist
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -98,14 +187,15 @@
             <img
               src="img/the-data-alchemist.jpg"
               alt=""
-              id="The-Data-Alchemist"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Algorithm Architect</h2>
+            <h2 class="card-box__name" id="the-algorithm-architect">
+              The Algorithm Architect
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -118,14 +208,15 @@
             <img
               src="img/the-algorithm-architect.jpg"
               alt=""
-              id="The-Algorithm-Architect"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Virtual Dreamer</h2>
+            <h2 class="card-box__name" id="the-virtual-dreamer">
+              The Virtual Dreamer
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -145,7 +236,9 @@
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Data Anomaly</h2>
+            <h2 class="card-box__name" id="the-data-anomaly">
+              The Data Anomaly
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -158,14 +251,15 @@
             <img
               src="img/the-data-anomaly.jpg"
               alt=""
-              id="The-Data-Anomaly"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Circuit Sage</h2>
+            <h2 class="card-box__name" id="the-circuit-sage">
+              The Circuit Sage
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -178,14 +272,15 @@
             <img
               src="img/the-circuit-sage.jpg"
               alt=""
-              id="The-Circuit-Sage"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Avatar Shaman</h2>
+            <h2 id="the-avatar-shaman" class="card-box__name">
+              The Avatar Shaman
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -198,14 +293,15 @@
             <img
               src="img/the-avatar-shaman.jpg"
               alt=""
-              id="The-avatar-shaman"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Data Harvest</h2>
+            <h2 class="card-box__name" id="the-data-harvest">
+              The Data Harvest
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -218,14 +314,15 @@
             <img
               src="img/the-data-harvest.jpg"
               alt=""
-              id="the-data-harvest"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Quantum Vision</h2>
+            <h2 class="card-box__name" id="the-quantum-vision">
+              The Quantum Vision
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -238,14 +335,15 @@
             <img
               src="img/the-quantum-vision.jpg"
               alt=""
-              id="the-quantum-vision"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Trojan Horse</h2>
+            <h2 class="card-box__name" id="the-trojan-horse">
+              The Trojan Horse
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -257,14 +355,15 @@
             <img
               src="img/the-trojan-horse.jpg"
               alt=""
-              id="the-trojan-horse"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Digital Labyrinth</h2>
+            <h2 class="card-box__name" id="the-digital-labyrinth">
+              The Digital Labyrinth
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -277,14 +376,15 @@
             <img
               src="img/the-digital-labyrinth.jpg"
               alt=""
-              id="the-digital-labyrinth"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Digital Hivemind</h2>
+            <h2 class="card-box__name" id="the-digital-hivemind">
+              The Digital Hivemind
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -297,14 +397,15 @@
             <img
               src="img/the-digital-hivemind.jpg"
               alt=""
-              id="the-digital-hivemind"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Cyber Cultist</h2>
+            <h2 class="card-box__name" id="the-cyber-cultist">
+              The Cyber Cultist
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -317,14 +418,15 @@
             <img
               src="img/the-cyber-cultist.jpg"
               alt=""
-              id="the-cyber-cultist"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Binary Abyss</h2>
+            <h2 class="card-box__name" id="the-binary-abyss">
+              The Binary Abyss
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -337,14 +439,13 @@
             <img
               src="img/the-binary-abyss.jpg"
               alt=""
-              id="the-binary-abyss"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Deep Web</h2>
+            <h2 class="card-box__name" id="the-deep-web">The Deep Web</h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -354,17 +455,14 @@
                 </p>
               </div>
             </div>
-            <img
-              src="img/the-deep-web.jpg"
-              alt=""
-              id="the-deep-web"
-              class="card-box__img-left"
-            />
+            <img src="img/the-deep-web.jpg" alt="" class="card-box__img-left" />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Techno-Emperor</h2>
+            <h2 class="card-box__name" id="the-techno-emperor">
+              The Techno-Emperor
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -377,14 +475,15 @@
             <img
               src="img/the-techno-emperor.jpg"
               alt=""
-              id="the-techno-emperor"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Data Vampire</h2>
+            <h2 class="card-box__name" id="the-data-vampire">
+              The Data Vampire
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -396,14 +495,15 @@
             <img
               src="img/the-data-vampire.jpg"
               alt=""
-              id="the-data-vampire"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Digital Reaper</h2>
+            <h2 class="card-box__name" id="the-digital-reaper">
+              The Digital Reaper
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -416,14 +516,15 @@
             <img
               src="img/the-digital-reaper.jpg"
               alt=""
-              id="the-digital-reaper"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Phantom Network</h2>
+            <h2 class="card-box__name" id="the-phantom-network">
+              The Phantom Network
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -436,14 +537,15 @@
             <img
               src="img/the-phantom-network.jpg"
               alt=""
-              id="the-phantom-network"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Lost Algorithm</h2>
+            <h2 class="card-box__name" id="the-lost-algorithm">
+              The Lost Algorithm
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -456,14 +558,15 @@
             <img
               src="img/the-lost-algorithm.jpg"
               alt=""
-              id="the-lost-algorithm"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Dark Web Oracle</h2>
+            <h2 class="card-box__name" id="the-dark-web-oracle">
+              The Dark Web Oracle
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -476,14 +579,13 @@
             <img
               src="img/the-dark-web-oracle.jpg"
               alt=""
-              id="the-dark-web-oracle"
               class="card-box__img-left"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Codebreaker</h2>
+            <h2 class="card-box__name" id="the-codebreaker">The Codebreaker</h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -496,14 +598,15 @@
             <img
               src="img/the-codebreaker.jpg"
               alt=""
-              id="the-codebreaker"
               class="card-box__img-right"
             />
           </div>
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Echo Chamber</h2>
+            <h2 class="card-box__name" id="the-echo-chamber">
+              The Echo Chamber
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-left">
@@ -516,7 +619,6 @@
             <img
               src="img/the-echo-chamber-.jpg"
               alt=""
-              id="the-echo-chamber-"
               class="card-box__img-left"
             />
           </div>
@@ -563,7 +665,9 @@
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Data Puppeteer</h2>
+            <h2 class="card-box__name" id="the-data-puppeteer">
+              The Data Puppeteer
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -574,9 +678,8 @@
               </div>
             </div>
             <img
-              src="img/the-quantum-paradox.jpg"
+              src="img/the-data-puppeteer.jpg"
               alt=""
-              id="the-quantum-paradox"
               class="card-box__img-right"
             />
           </div>
@@ -683,7 +786,9 @@
         </li>
         <li>
           <div class="card-box">
-            <h2 class="card-box__name">The Ghost in the Machine</h2>
+            <h2 class="card-box__name" id="the-ghost-in-the-machine">
+              The Ghost in the Machine
+            </h2>
             <div class="box-text__black">
               <div class="box-text__grey">
                 <p class="card-box__text-right">
@@ -696,7 +801,6 @@
             <img
               src="img/the-ghost-in-the-machine.jpg"
               alt=""
-              id="the-ghost-in-the-machine"
               class="card-box__img-right"
             />
           </div>
