@@ -209,7 +209,7 @@ body {
   background-color: var(--color-background);
   border: solid 1px var(--color-accent-1);
   border-radius: 10px;
-  padding: 20px 5px 5px 5px;
+  padding: 5px;
   height: 180px;
 }
 
@@ -333,6 +333,8 @@ body {
 .footer-circle {
   width: 20px;
   height: 20px;
+  border: solid 0.5px whitesmoke;
+  border-radius: 51%;
   animation: spin 20s linear infinite;
 }
 

@@ -94,13 +94,14 @@ body {
 
 /* Dropdown */
 .dropbtn {
+  width: 140px;
   background-color: var(--color-background);
   border: solid 1px var(--color-accent-1);
   font-family: "Montserrat", sans-serif;
   color: var(--color-text);
   border-radius: 10px;
   font-size: 1rem;
-  padding: 5px;
+  padding: 2px;
   cursor: pointer;
 }
 
@@ -129,10 +130,9 @@ body {
   border-radius: 5px;
   background-color: rgba(0, 102, 255, 0.9);
   min-width: 205px;
-  overflow: hidden;
+  /* overflow: hidden; */
   overflow: scroll;
-  /* border: 1px solid #ddd; */
-  max-height: 288px;
+  max-height: 400px;
   z-index: 1;
 }
 
@@ -153,12 +153,14 @@ body {
 .continer-cards {
   margin-top: 60px;
   width: 90%;
+  height: 72vw;
   max-height: 555px;
   padding: 10px;
   border: solid 2px var(--color-accent-1);
   border-radius: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   overflow: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .card-box {
@@ -169,6 +171,7 @@ body {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: solid 4px var(--color-accent-1);
+  scroll-snap-align: center;
 }
 .card-box__name {
   font-family: "Montserrat", sans-serif;
@@ -364,6 +367,8 @@ body {
 .footer-circle {
   width: 20px;
   height: 20px;
+  border: solid 0.5px whitesmoke;
+  border-radius: 51%;
   animation: spin 20s linear infinite;
 }
 
