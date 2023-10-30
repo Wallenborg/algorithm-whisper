@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   shuffleLink.addEventListener("click", function (e) {
     e.preventDefault();
 
-    // Lägg till din kod för att ändra klasserna för dina kort här
     document.querySelector(".card-0").style.animation =
       "shuffle 0.5s 4 backwards";
     document.querySelector(".card-1").style.animation =
