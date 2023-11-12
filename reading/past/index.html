@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style-past.css" />
+    <link rel="stylesheet" href="../css/style-past.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,23 +25,23 @@
 
       <div class="card-grid">
         <div class="box1">
-          <img class="card01" src="../all-cards/img/backside.jpg" alt="" />
+          <img class="card01" src="../../all-cards/img/backside.jpg" alt="" />
         </div>
         <div class="box2">
-          <img class="card02" src="../all-cards/img/backside.jpg" alt="" />
+          <img class="card02" src="../../all-cards/img/backside.jpg" alt="" />
         </div>
         <div class="box3">
-          <img class="card03" src="../all-cards/img/backside.jpg" alt="" />
+          <img class="card03" src="../../all-cards/img/backside.jpg" alt="" />
         </div>
       </div>
       <div class="contaner-main-text">
-        <h1 class="main-text">
+        <h1 class="main-text" id="ask-text">
           Select a card, and it shall become the vessel of your ancestral
           echoes, a reflection of the past."
         </h1>
       </div>
 
-      <img src="../img/06.png" alt="black circle" class="big-circle" />
+      <img src="../../img/06.png" alt="black circle" class="big-circle" />
 
       <footer class="footer-box">
         <div class="footer-box__headline">The Algorithm Whisper</div>
@@ -49,17 +49,37 @@
           Dreamt into existence by Niklas Wallenborg. A vision into the tapestry
           of the digital realm
         </div>
-        <a href="../all-cards/index.html" class="footer-box__link"
+        <a href="../../all-cards/index.html" class="footer-box__link"
           >View All Cards</a
         >
-        <a href="../shop/index.html" class="footer-box__link">Shop</a>
-        <a href="../index.html" class="footer-box__link">Back</a>
+        <a href="../../shop/index.html" class="footer-box__link">Shop</a>
+        <a href="../../index.html" class="footer-box__link">Back</a>
         <div class="footer-box-circle">
-          <img src="../img/03.png" alt="black circle" class="footer-circle" />
-          <img src="../img/02.png" alt="black circle" class="footer-circle" />
-          <img src="../img/04.png" alt="black circle" class="footer-circle" />
+          <img
+            src="../../img/03.png"
+            alt="black circle"
+            class="footer-circle"
+          />
+          <img
+            src="../../img/02.png"
+            alt="black circle"
+            class="footer-circle"
+          />
+          <img
+            src="../../img/04.png"
+            alt="black circle"
+            class="footer-circle"
+          />
         </div>
       </footer>
     </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage" class="modal-content" />
+      <div id="modalText" class="modal-text"></div>
+    </div>
+
+    <script src="scriptpast.js"></script>
   </body>
 </html>

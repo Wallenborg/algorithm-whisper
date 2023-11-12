@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var delay = 4600;
 
     setTimeout(function () {
-      window.location.href = "past.html";
+      window.location.href = "past/index.html";
     }, delay);
   });
 });

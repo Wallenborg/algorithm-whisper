@@ -225,6 +225,13 @@ body {
   color: var(--color-text);
 }
 
+.quot {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: var(--color-accent-1);
+}
+
 /*footer*/
 
 .footer-box {
