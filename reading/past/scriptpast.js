@@ -65,7 +65,7 @@ const cardDescriptions = {
   36: "Signifying the importance of understanding and addressing hidden vulnerabilities in the digital space, this card represents awareness and vigilance.",
 };
 
-// Create a variable to keep track of the main text
+// A variable to keep track of the main text
 let mainTextIndex = 0;
 
 // Function to update the main text
@@ -74,10 +74,9 @@ function updateMainText() {
     "Select another card, for it shall embody the essence of your days to come.",
     "One more, to unveil the veiled whispers of your digital destiny.",
     "Reflect on the revealed cards, as they echo the chapters of your digital journey.",
-    // Add more main texts as needed
   ];
 
-  // Add a delay of 500 milliseconds (adjust as needed)
+  // Delay of 500 milliseconds
   setTimeout(() => {
     // Update the main text
     document.getElementById("ask-text").textContent = mainTexts[mainTextIndex];
@@ -93,8 +92,6 @@ while (uniqueRandomCards.length < 3) {
   uniqueRandomCards.push(cardValue);
 }
 
-// Assuming you have an array of cards somewhere in your code
-// For example, you can define it like this:
 const cards = document.querySelectorAll(".card-grid > div");
 
 // Update event listeners for each card
@@ -114,10 +111,10 @@ cards.forEach((card, index) => {
     // Change the back of the card to a randomly chosen front from the unique set
     card.querySelector("img").src = `../img/card${cardValue}.jpg`;
 
-    // Add a class to mark the card as revealed
+    // Class to mark the card as revealed
     card.classList.add("revealed");
 
-    // Add a delay of 500 milliseconds (adjust as needed)
+    // Delay of 500 milliseconds
     setTimeout(() => {
       // Open the modal with the selected card's value and descriptive text
       openModal(cardValue, cardDescription);
