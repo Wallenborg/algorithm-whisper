@@ -71,8 +71,8 @@ let mainTextIndex = 0;
 // Function to update the main text
 function updateMainText() {
   const mainTexts = [
-    "Select another card, for it shall embody the essence of your present moment.",
-    "one more, to unveil the veiled whispers of your digital destiny.",
+    "Select another card, for it shall embody the essence of your days to come.",
+    "One more, to unveil the veiled whispers of your digital destiny.",
     "Reflect on the revealed cards, as they echo the chapters of your digital journey.",
     // Add more main texts as needed
   ];
