@@ -173,13 +173,16 @@ body {
   margin-top: 220px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 30px;
   padding: 10px;
   border: solid 2px var(--color-accent-1);
   border-radius: 10px;
   width: 90%;
+
   max-height: 210px;
   overflow: hidden;
   overflow: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .text-box-shop {
@@ -193,6 +196,7 @@ body {
   max-height: 210px;
   overflow: hidden;
   overflow: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .black-box {
@@ -200,6 +204,7 @@ body {
   padding: 5px;
   height: 190px;
   margin-bottom: 5px;
+  scroll-snap-align: center;
 }
 
 .grey-box {
