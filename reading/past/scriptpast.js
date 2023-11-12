@@ -1,28 +1,3 @@
-// const cards = document.querySelectorAll(".card-grid > div");
-// const cardValues = Array.from({ length: 36 }, (_, index) => index + 1);
-
-// // Skapa en unik slumpmässig uppsättning kort
-// const uniqueRandomCards = [];
-// while (uniqueRandomCards.length < 3) {
-//   const randomIndex = Math.floor(Math.random() * cardValues.length);
-//   const cardValue = cardValues.splice(randomIndex, 1)[0];
-//   uniqueRandomCards.push(cardValue);
-// }
-
-// cards.forEach((card, index) => {
-//   card.addEventListener("click", () => {
-//     // Byt baksidan av kortet till en slumpad framsida från den unika uppsättningen
-//     const cardValue = uniqueRandomCards[index];
-//     card.querySelector("img").src = `../img/card${cardValue}.jpg`;
-//   });
-// });
-
-// -------
-// TEST
-// -------
-
-// Assuming you have an array of card values somewhere in your code
-// For example, you can define it like this:
 const cardValues = Array.from({ length: 36 }, (_, index) => index + 1);
 
 // Create an object with card values and descriptive text
